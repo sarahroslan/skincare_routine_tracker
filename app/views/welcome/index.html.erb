@@ -1,0 +1,17 @@
+
+
+<div class="jumbotron vertical-center">
+  <div class="container text-center">
+    <h1>Welcome to your personal skincare routine tracker!</h1>
+    <p class="lead">Keep track of your skincare routine!</p>
+    <hr class="my-4">
+
+    <%# if current_user %>
+      <h2> Welcome back! </h2>
+    <%# else %>
+      <a href="/sign_up" class="btn btn-dark mb-2 sr-icons">Sign Up</a>
+      <a href="/sign_in" class="btn btn-dark mb-2 sr-icons">Sign In</a>
+    <%#end %>
+    </p>
+  </div>
+</div>
