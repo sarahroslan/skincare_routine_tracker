@@ -1,0 +1,22 @@
+<div class="col-md-6 mx-auto mt-5">
+  <div class="card mt-3 mx-3 p-1 d-flex align-items-center">
+    <div class="card-body">
+      <h1 class="card-title text-dark text-center">Sign up here!</h1></a>
+        <br />
+        <br />
+     <%= form_for(:session, url: sign_in_path) do |f| %>
+
+  Email: <br />
+  <%= f.text_field :email %> <br />
+  Password: <br />
+  <%= f.password_field :password %> <br />
+  
+ <%= f.submit "Submit" %>
+
+<% end %>
+    </div>
+  </div>
+</div>
+
+
+
