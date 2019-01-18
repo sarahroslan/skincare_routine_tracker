@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-   #allow user to edit profile
+   user = User.update
   end
 
   def show
