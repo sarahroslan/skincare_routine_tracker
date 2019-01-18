@@ -11,12 +11,13 @@ class SessionsController < ApplicationController
         redirect_to user
       else
         # Create an error message.
-        flash[:danger] = 'Invalid email/password combination' # Not quite right!
+        flash[:danger] = 'Invalid email/password combination' # Fix this
         render 'new'
 
       end
   end
 
   def destroy
+    redirect_to '/'
   end
 end
